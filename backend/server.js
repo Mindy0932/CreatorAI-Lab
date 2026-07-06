@@ -115,6 +115,8 @@ Return ONLY JSON.
   }
 });
 
-app.listen(3000, () => {
-  console.log("RUNNING http://localhost:3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`RUNNING on port ${PORT}`);
 });
